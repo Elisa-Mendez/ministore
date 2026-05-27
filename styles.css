@@ -1,0 +1,214 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f8f8;
+}
+
+/* NAVBAR */
+
+.navbar{
+  background-color: #111827;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 60px;
+}
+
+.logo{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.menu{
+  display: flex;
+  gap: 25px;
+
+  list-style: none;
+}
+
+.menu a{
+  text-decoration: none;
+  color: white;
+}
+
+.menu a:hover{
+  color: #c4b5fd;
+}
+
+/* HERO */
+
+.hero{
+  background: linear-gradient(to right, #f3e8ff, #ede9fe);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 60px;
+}
+
+.hero-texto h1{
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.hero-texto p{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-texto button{
+  background-color: #8b5cf6;
+  color: white;
+
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.hero-texto button:hover{
+  background-color: #7c3aed;
+}
+
+.hero-imagen img{
+  width: 300px;
+}
+
+/* PRODUCTOS */
+
+.productos{
+  padding: 60px;
+}
+
+.productos h2{
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 35px;
+}
+
+/* GRID */
+
+.productos-grid{
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+/* CARDS */
+
+.card{
+  background-color: white;
+
+  border-radius: 15px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+  width: 180px;
+  height: 180px;
+
+  object-fit: contain;
+
+  margin-bottom: 15px;
+}
+
+.card h3{
+  margin-bottom: 10px;
+}
+
+.precio{
+  color: #8b5cf6;
+  font-size: 22px;
+  font-weight: bold;
+
+  margin-bottom: 15px;
+}
+
+.card button{
+  background-color: #8b5cf6;
+  color: white;
+
+  border: none;
+
+  padding: 10px 20px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.card button:hover{
+  background-color: #7c3aed;
+}
+
+/* FOOTER */
+
+footer{
+  background-color: #111827;
+
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 60px;
+}
+
+.redes{
+  display: flex;
+  gap: 20px;
+}
+
+.redes a{
+  color: white;
+  text-decoration: none;
+}
+
+.redes a:hover{
+  color: #c4b5fd;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 768px){
+
+  .navbar{
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero{
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .productos-grid{
+    grid-template-columns: 1fr;
+  }
+
+  footer{
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+}
